@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="section-container">
+      <div class="form-container">
+        <h2 class="form-title">What do we call you?</h2>
+        <form>
+          <div class="form-group">
+            <label class="form-label" for="email">Email</label>
+            <input class="form-input email-input" type="email" name="email" />
+            <p class="alerta-mesaj-email">Please enter a valid email address</p>
+          </div>
+
+          <div class="form-name-container">
+            <div class="form-group">
+              <label class="form-label" for="first-name">First Name</label>
+              <input
+                class="form-input first-name-input"
+                type="text"
+                name="first-name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="last-name">Last Name</label>
+              <input
+                class="form-input last-name-input"
+                type="text"
+                name="last-name"
+              />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="location">Location</label>
+            <input
+              class="form-input location-input"
+              type="text"
+              name="location"
+            />
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="phone">Phone</label>
+            <input class="form-input phone-input" type="text" name="phone" />
+          </div>
+          <button class="save-button">Save</button>
+        </form>
+      </div>
+
+      <div class="user-card" style="display: none">
+        <div class="user-name-container">
+          <h6 class="user-first-name">First Name</h6>
+          <h6 class="user-last-name">Last Name</h6>
+        </div>
+        <p class="user-email">example@xxxxx.xxx</p>
+
+        <div class="phone-location">
+          <div class="form-name-container">
+            <img src="/images/icons/location.svg" alt="" />
+            <p class="user-location">City</p>
+          </div>
+          <div class="form-name-container">
+            <img src="/images/icons/phone.svg" alt="" />
+            <p class="user-phone">Phone</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
