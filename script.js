@@ -16,7 +16,7 @@ let userLocation = document.querySelector(".user-location");
 let phoneInput = document.querySelector(".phone-input");
 let userPhone = document.querySelector(".user-phone");
 
-let saveButton = document.querySelector(".save-button")
+let saveButton = document.querySelector(".save-button");
 
 
 let lengthEmail = () => {
@@ -76,4 +76,4 @@ let lengthEmail = () => {
     locationInput.addEventListener('input', card);
     phoneInput.addEventListener('input', card);
     emailInput.addEventListener("input", lengthEmail);
-    saveButton.addEventListener('click', saveStuck)
+    saveButton.addEventListener('click', saveStuck);
